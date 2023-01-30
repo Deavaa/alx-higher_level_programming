@@ -46,7 +46,7 @@ class Rectangle:
         getter
         '''
         if (not isinstance(self.__height, int)) or isinstance(self.__height,
-                                                             bool):
+                                                              bool):
             raise TypeError("height must be an integer")
         if self.__height < 0:
             raise ValueError("height must be >= 0")
@@ -75,8 +75,7 @@ class Rectangle:
         return perimeter of perimeter
         '''
         if self.__height == 0 or self.width == 0:
-
-           return 0
+            return 0
         return (self.__height + self.width) * 2
 
     def __str__(self):
@@ -92,10 +91,8 @@ class Rectangle:
                 ret_str += '\n'
         return ret_str
 
-
     def __repr__(self):
-
-       '''method: __repr__
+        '''method: __repr__
         return: representation of rectangle that can be used by eval() to
                 create new object
         '''
@@ -105,7 +102,6 @@ class Rectangle:
 
     def __del__(self):
         '''method: __del__
-           deletes instance of Rectangle class, and prints "bye" message
-        '''
+           deletes instance of Rectangle class, and prints "bye" message        	'''
         print("Bye rectangle...")
 
